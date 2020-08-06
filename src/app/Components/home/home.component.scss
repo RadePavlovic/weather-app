@@ -1,0 +1,17 @@
+.list-group-item {
+    background: transparent;
+    font-size: larger;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid palegreen; 
+    transition: background 1s ease-in-out;
+
+    &:hover {
+        background:linear-gradient(90deg, rgba(9,94,132) 0%, rgba(0,212,255,0.9220063025210083) 51%, rgb(9,94,132) 100%);
+    }
+}
+.notice {
+    margin: 40%;
+    top:50%
+}
