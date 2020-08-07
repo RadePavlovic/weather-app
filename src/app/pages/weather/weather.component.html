@@ -9,30 +9,7 @@
                 <app-current-weather [forecast]='forecast' [place]='place'></app-current-weather>
                 <app-daily-weather [forecasts]='forecast.daily'></app-daily-weather> 
                 <app-daily-weather-chart [forecasts]='forecast.daily'></app-daily-weather-chart>
-                <app-hourly-weather [forecasts]='forecast.hourly'></app-hourly-weather>
-
-                <!-- <h2 class="text-center text-white">Hourly</h2>
-                <section class="cards">
-                    <div class="cards-content" *ngFor="let weatherHourly of forecast.hourly | slice:1">
-                        <p class="text-center">{{(weatherHourly.dt).split(' ').pop()}}</p>
-                        <ul>
-                            <li>
-                                <p><span><img src="assets/weather-icon/icons/cloud.png" alt="" class="shaking"></span>
-                                    {{weatherHourly.clouds}}%</p>
-                            </li>
-                            <li>
-                                <p><span><img src="assets/weather-icon/icons/humidity.png" alt=""
-                                            class="shaking"></span>{{weatherHourly.humidity}}</p>
-                            </li>
-                            <li>
-                                <p><span><img
-                                            [src]="'assets/weather-icon/icons/'+(weatherHourly.temp-273.15 > 25 ? 'temperature' : 'cold')+'.png'"
-                                            alt="" class="shaking"></span>{{weatherHourly.temp-273.15 | number:'1.0-0'}}
-                                    °C</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section> -->
+                <app-hourly-weather [forecasts]='forecast.hourly'></app-hourly-weather> 
             </div>
             <div class="col-md-3">
             </div>
