@@ -10,7 +10,8 @@ import { WeatherComponent } from './pages/weather/weather.component';
 import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
 import { DailyWeatherComponent } from './components/daily-weather/daily-weather.component';
 import { DailyWeatherChartComponent } from './components/daily-weather-chart/daily-weather-chart.component';
-import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weather.component'   
+import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weather.component';
+import { FooterComponent } from './pages/footer/footer.component'   
 
 
 
@@ -22,7 +23,8 @@ import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weath
     CurrentWeatherComponent,
     DailyWeatherComponent,
     DailyWeatherChartComponent,
-    HourlyWeatherComponent
+    HourlyWeatherComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

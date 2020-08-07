@@ -24,10 +24,7 @@ export class DailyWeatherChartComponent implements OnInit {
     }, 0);
   }
   createDailyChart(hourlyDates, tempMax, tempMin) {
-    let h = hourlyDates.map(date => date.split(' ').slice(0, 2).toString().replace(',', ' '))
-    console.log('h');
-    console.log(h);
-    
+    let h = hourlyDates.map(date => date.split(' ').slice(0, 2).toString().replace(',', ' ')) 
     Chart.defaults.global.defaultFontColor = 'white';
     this.chart = new Chart('canvas', {
       type: 'line',

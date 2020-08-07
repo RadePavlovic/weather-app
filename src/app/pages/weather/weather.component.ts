@@ -35,10 +35,7 @@ export class WeatherComponent implements OnInit {
       })
 
     ).subscribe((res: IOneCallWeather) => {
-      this.forecast = res
-      console.log(this.forecast);
-
-
+      this.forecast = res 
     })
   }
   timeConverter(UNIX_timestamp) {
