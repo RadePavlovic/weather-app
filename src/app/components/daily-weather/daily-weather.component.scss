@@ -2,6 +2,10 @@
 	background-color: rgba(255,255,255, 0.7);
 	height: 100%;
 	transition: all 1s;
+	width: 80%;
+	margin: 0 auto;
+	color: #0d4ba4;
+    font-style: oblique;
 	&:hover {
 		transform: scale(1.1, 1.1);
 		-webkit-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.3);
@@ -19,4 +23,9 @@
         width: 70%;
         height: 50%;
 	}
+}
+.card-img {
+	width: 52%;
+    /* align-content: center; */
+    margin: 0 auto;
 }

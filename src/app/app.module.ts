@@ -11,7 +11,8 @@ import { CurrentWeatherComponent } from './components/current-weather/current-we
 import { DailyWeatherComponent } from './components/daily-weather/daily-weather.component';
 import { DailyWeatherChartComponent } from './components/daily-weather-chart/daily-weather-chart.component';
 import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weather.component';
-import { FooterComponent } from './pages/footer/footer.component'   
+import { FooterComponent } from './pages/footer/footer.component';
+import { HeaderComponent } from './pages/header/header.component'   
 
 
 
@@ -24,7 +25,8 @@ import { FooterComponent } from './pages/footer/footer.component'
     DailyWeatherComponent,
     DailyWeatherChartComponent,
     HourlyWeatherComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

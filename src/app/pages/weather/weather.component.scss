@@ -30,13 +30,3 @@
 		*width: 14.285714285714285714285714285714%;
 	}
 } 
-.svg {
-	filter: invert(27%) sepia(7%) saturate(2812%) hue-rotate(309deg) brightness(269%) contrast(32%);
-	width: 7%;
-	&:hover,
-	:focus {
-		filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-		cursor: pointer;
-		width: 8%;
-	}
-}

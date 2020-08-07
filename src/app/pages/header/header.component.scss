@@ -1,0 +1,22 @@
+.svg {
+	filter: invert(27%) sepia(7%) saturate(2812%) hue-rotate(309deg) brightness(269%) contrast(32%);
+	width:30px;
+	&:hover
+	 {
+		filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+		cursor: pointer;
+        transform: scale(1.1);
+    }
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+}
+.navbar-brand {
+    margin: 0 auto;
+}
+.navbar {
+    margin:5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
