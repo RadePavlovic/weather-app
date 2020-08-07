@@ -1,0 +1,35 @@
+<div class="main-container">
+    <div class="row">
+        <div class="col-md-4 column">
+            <div class="place-name">
+                <h1>{{place}}</h1><span>
+                    <p class="text-center">{{(forecast.daily[0].dt | date:'fullDate')}}</p>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-8 text-center">
+            <h1 class="temp"> {{forecast.current.temp}} °C</h1>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-4 column" style="align-items: center; justify-content: center;">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img src="assets/weather-icon//icons/water.png">
+                    <h4>{{forecast.current.humidity}} %</h4>
+                </li>
+                <li class="list-group-item"> <img src="assets/weather-icon//icons/wind.png">
+                    <h4>{{forecast.current.wind_speed}} m/s</h4>
+                </li>
+                <li class="list-group-item">
+                    <img src="assets/weather-icon//icons/pressure.png">
+                    <h4>{{forecast.current.pressure}} hPa</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8 text-center" style="align-items: center; justify-content: center;">
+            <img [src]="'assets/weather-icon/icons/' + forecast.current.weather[0].icon + '.png'" alt="" height="300px">
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,13 @@
+<h2 class="text-center text-white">Daily</h2>
+<div class="row text-center">
+    <div class="col-lg res" *ngFor="let forecast of forecasts | slice:1">
+        <div class="card weather-card">
+            <p>{{(forecast.dt | date:'fullDate').split(',').shift()}}</p>
+
+            <img class="card-img-top" [src]="'assets/weather-icon/icons/' + forecast.weather[0].icon + '.png'"
+                alt="Card image cap">
+            <p style="float: left;">MAX: {{forecast.temp.max-273.15 | number:'1.0-0'}} °C</p>
+            <p style="float: left;">MIN: {{forecast.temp.min-273.15 | number:'1.0-0'}} °C</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1 {
+		width: 100%;
+		*width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1 {
+		width: 14.285714285714285714285714285714%;
+		*width: 14.285714285714285714285714285714%;
+	}
+}
+
+
+/**
+   *  The following is not really needed in this case
+   *  Only to demonstrate the usage of @media for large screens
+   */
+
+@media (min-width: 1200px) {
+	.seven-cols .col-md-1,
+	.seven-cols .col-sm-1,
+	.seven-cols .col-lg-1 {
+		width: 14.285714285714285714285714285714%;
+		*width: 14.285714285714285714285714285714%;
+	}
+} 
+.svg {
+	filter: invert(27%) sepia(7%) saturate(2812%) hue-rotate(309deg) brightness(269%) contrast(32%);
+	width: 7%;
+	&:hover,
+	:focus {
+		filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+		cursor: pointer;
+		width: 8%;
+	}
+}

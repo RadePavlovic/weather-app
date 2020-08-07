@@ -1,0 +1,22 @@
+<h2 class="text-center text-white">Hourly</h2>
+<section class="cards">
+    <div class="cards-content" *ngFor="let forecast of forecasts| slice:1">
+        <p class="text-center">{{(forecast.dt).split(' ').pop()}}</p>
+        <ul>
+            <li>
+                <p><span><img src="assets/weather-icon/icons/cloud.png" alt="" class="shaking"></span>
+                    {{forecast.clouds}}%</p>
+            </li>
+            <li>
+                <p><span><img src="assets/weather-icon/icons/humidity.png" alt=""
+                            class="shaking"></span>{{forecast.humidity}}</p>
+            </li>
+            <li>
+                <p><span><img
+                            [src]="'assets/weather-icon/icons/'+(forecast.temp-273.15 > 25 ? 'temperature' : 'cold')+'.png'"
+                            alt="" class="shaking"></span>{{forecast.temp-273.15 | number:'1.0-0'}}
+                    °C</p>
+            </li>
+        </ul>
+    </div>
+</section>

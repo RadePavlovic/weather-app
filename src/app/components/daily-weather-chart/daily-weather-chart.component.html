@@ -1,0 +1,11 @@
+
+<ng-container *ngIf="chart; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate><div class="container">
+    <div *ngIf="chart">
+        <canvas id="canvas" height="100">{{chart}}</canvas>
+    </div>
+</div></ng-template>
+<ng-template #elseTemplate>
+    <div class="loader">Loading...</div>
+
+</ng-template>

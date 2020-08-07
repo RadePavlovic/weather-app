@@ -5,8 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './Components/home/home.component';
-import { WeatherComponent } from './Components/weather/weather.component'   
+import { HomeComponent } from './pages/home/home.component';
+import { WeatherComponent } from './pages/weather/weather.component';
+import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
+import { DailyWeatherComponent } from './components/daily-weather/daily-weather.component';
+import { DailyWeatherChartComponent } from './components/daily-weather-chart/daily-weather-chart.component';
+import { HourlyWeatherComponent } from './components/hourly-weather/hourly-weather.component'   
 
 
 
@@ -14,7 +18,11 @@ import { WeatherComponent } from './Components/weather/weather.component'
   declarations: [
     AppComponent,
     HomeComponent,
-    WeatherComponent
+    WeatherComponent,
+    CurrentWeatherComponent,
+    DailyWeatherComponent,
+    DailyWeatherChartComponent,
+    HourlyWeatherComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <div class="search">
+            <input type="text" [formControl]="searchControl" placeholder="search" class="form-control">
+            <!-- <hr> -->
+            <div>
+                <ul class="list-group" *ngFor="let city of cities">
+                    <li class="list-group-item" [routerLink]="['/weather',city.name,{lat:city.coord.lat, lon:city.coord.lon}]">{{city.name}}  <img [src]="'assets/flags/1x1/' + (city.country ? city.country.toLowerCase() : 'none') + '.svg'" alt="{{city.name}}" style="width: 20px; border-radius: 30%; "></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row" *ngIf="cities.length == 0"> 
+      <div class="col">
+        <div class="notice text-center">
+            <p>Enter <span style="color: red;">at least 3 letters</span> in the search bar to find the location you want!</p>
+        </div>
+      </div>
+  </div>
+</div>
